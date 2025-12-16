@@ -2,7 +2,7 @@
 
 
 ## Goal
-Build an end-to-end analytics project that models how users engage with a mental-health or wellness product (e.g., therapy sessions, meditation content, messaging).
+Build an end-to-end analytics project/dashboard that models how users engage with a mental-health or wellness product (e.g., therapy sessions, meditation content, messaging).
 
 (Meta-goal:) Simulate the kind of reporting and insights a Data Analyst / Data Scientist would produce for product analytics
 
@@ -12,7 +12,6 @@ Build an end-to-end analytics project that models how users engage with a mental
 * Clinical Operations / Care Navigation (monitor therapy follow-through)
 * Executives (understand whether new features drive meaningful outcomes)
 
-
 ## Scope
 * Create a user-level, event-level dataset mimicking an actual product’s clickstream.
 * Define core engagement and retention metrics.
@@ -21,4 +20,6 @@ Build an end-to-end analytics project that models how users engage with a mental
 * Produce an executive insights report summarizing key findings and product recommendations.
 
 ## Dataset
+* Utilize the BigQuery public dataset (E-commerce dataset) as base
+* Convert the e-commerce evvents/dimensions to something more related to Mental health (session) event
 * 
