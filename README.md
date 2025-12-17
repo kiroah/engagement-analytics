@@ -20,6 +20,20 @@ Build an end-to-end analytics project/dashboard that models how users engage wit
 * Produce an executive insights report summarizing key findings and product recommendations.
 
 ## Dataset
-* Utilize the BigQuery public dataset (E-commerce dataset) as base
+* Utilize the BigQuery public dataset (Google Analytics, GA4 dataset) as base
 * Convert the e-commerce evvents/dimensions to something more related to Mental health (session) event
-* 
+
+## Tools & services 
+The project uses the following tools and services: 
+* BigQuery - for the source dataset
+* dbt - For ETL/ELT transformations 
+* FastAPI - Backend API for the dashboard 
+* Streamlit - Frontend for the dashboard 
+* Plotly - For data visualization 
+
+
+
+## Gen AI used for: 
+* Folder structure & file name suggestions 
+* Makefile generation
+* General Q&A about coding

@@ -1,0 +1,9 @@
+engagement_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: dashboard-project-425723  # User's project from the gcloud output
+      dataset: engagement_analytics_dev # You might need to change this if you want a different dataset name
+      threads: 4
