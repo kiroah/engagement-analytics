@@ -17,9 +17,15 @@ def get_engagement_metrics():
     if not client:
         return {"error": "BigQuery client not initialized"}
     
-    # Placeholder query - later we will use dbt models
+    # Querying dbt model
     query = """
-    SELECT "demo" as metric, 100 as value
+    SELECT 
+        event_name as metric,
+        COUNT(*) as value
+    FROM `dashboard-project-425723.engagement_analytics_dev.stg_ga4`
+    GROUP BY 1
+    ORDER BY 2 DESC
+    LIMIT 10
     """
     try:
         query_job = client.query(query)

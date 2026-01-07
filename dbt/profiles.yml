@@ -4,6 +4,12 @@ engagement_analytics:
     dev:
       type: bigquery
       method: oauth
-      project: dashboard-project-425723  # User's project from the gcloud output
-      dataset: engagement_analytics_dev # You might need to change this if you want a different dataset name
+      project: dashboard-project-425723
+      dataset: engagement_analytics_dev
+      threads: 4
+    prod:
+      type: bigquery
+      method: oauth
+      project: dashboard-project-425723
+      dataset: engagement_analytics_prod
       threads: 4
